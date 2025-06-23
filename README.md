@@ -1,7 +1,7 @@
 
 # GPS Anti-Spoofing via Spatial Subspace Processing
 
-This MATLAB project implements a GPS anti-spoofing algorithm based on spatial subspace estimation. The method uses a 2×2 antenna array to detect and mitigate spoofed GPS signals in complex environments where spoofed and authentic signals are both below the noise floor.
+This MATLAB project implements a GPS anti-spoofing algorithm based on spatial subspace estimation. The method uses a 2×2 antenna array to detect and mitigate spoofed GPS signals in complex environments where spoofed and authentic signals are both near the noise floor.
 
 ##  Overview
 
