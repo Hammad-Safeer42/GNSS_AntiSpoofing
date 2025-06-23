@@ -3,7 +3,7 @@
 
 This MATLAB project implements a GPS anti-spoofing algorithm based on spatial subspace estimation. The method uses a 2×2 antenna array to detect and mitigate spoofed GPS signals in complex environments where spoofed and authentic signals are both below the noise floor.
 
-## 🔍 Overview
+##  Overview
 
 Traditional GPS spoofing detection relies on time-frequency domain correlation to identify PRN codes and Doppler shifts, which is computationally expensive. This project bypasses that need by estimating the **spoofing signal subspace vector (SSV)** using spatial information. It relies on the fact that spoofers transmit multiple PRNs from a single physical location, resulting in **constructive spatial energy accumulation**. In contrast, authentic signals arrive from multiple directions with lower aggregate spatial energy.
 
@@ -13,21 +13,7 @@ This technique:
 * Exploits spatial dominance of spoofing sources.
 * Leverages PRN code periodicity for signal alignment and enhancement.
 
-## 🛠 Features
 
-* **Simulated GPS spoofing and jamming scenarios**
-* **2×2 antenna array processing**
-
-
-* **Beam pattern computation for visualization**
-* **Direction of Arrival (DOA) estimation**
-* **Signal acquisition before and after spoofing mitigation**
-  
-Method 1 – Null Steering Only:
-Suppresses spoofing and jamming signals by projecting received signals onto the orthogonal complement of the spoofing subspace vector (SSV). No PRN/Doppler search required.
-
-Method 2 – Null Steering + Power Maximization (Pmax):
-Extends Method 1 by enhancing signal extraction along directions of authentic signals through spatial power maximization. Uses prior Doppler and PRN detection for refinement.
 
 ## 📁 Project Structure
 
@@ -71,7 +57,7 @@ Extends Method 1 by enhancing signal extraction along directions of authentic si
    * Estimates direction of arrival for spoofing, jamming, and filtered signals.
 
 
-## 📦 Requirements
+## Requirements
 
 * **MATLAB** (R2020 or newer recommended)
 * Signal Processing Toolbox (for plotting and basic DSP)
